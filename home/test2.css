@@ -1,0 +1,127 @@
+@font-face {
+    font-family: myFont1;
+    src: url(../fonts/Jura-Light.ttf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(../fonts/Suissnord.otf);
+}
+
+.homepage {
+    background-color: rgb(10, 10, 10);
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    font-family: myFont1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+            black),
+        url(../pictures/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+}
+
+.header .section-2 {
+    height: 15vh;
+    background-color: black;
+    border-radius: 0 0 30% 30%;
+}
+
+.header ul {
+    background-color: black;
+    width: 100%;
+    height: 50%;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.header ul li,
+.header ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.3vw;
+}
+
+.header .section-3 ul li {
+    background-color: rgba(128, 128, 128, 0.2);
+    color: white;
+    padding: 0.5em;
+    border-radius: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.3vw;
+}
+
+.header ul li img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+}
+
+.quote {
+    color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.quote p {
+    margin: 1.5vh 0px 0px 0px;
+    padding: 0px;
+    font-family: myFont2;
+    font-size: 8vw;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1vw;
+}
+
+.quote p span {
+    color: rgb(255, 0, 153);
+}
+
+.quote button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgb(255, 0, 153);
+    border-radius: 2em;
+    align-self: self-end;
+    justify-self: start;
+    margin-left: 1vw;
+    margin-bottom: 10vh;
+    padding: 1em 2em;
+    font-family: myFont1;
+    font-size: 2vw;
+    text-transform: uppercase;
+    letter-spacing: 1vw;
+}
+
+/*ul default
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}*/
